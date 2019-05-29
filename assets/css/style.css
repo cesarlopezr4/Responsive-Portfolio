@@ -64,17 +64,7 @@ body {
   }
   
   #logo {
-    float: left;
-    width: 250px;
-    height: 90px;
-    font-family: Georgia, Times, "Times New Roman", serif;
-    font-size: 30px;
-    font-weight: 700;
-    line-height: 90px;
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    background: #4aaaa5;
+    
   }
   
   nav {
@@ -98,18 +88,27 @@ body {
   
   /* footer */
   
-  footer {
-    padding: 30px 0;
-    clear: both;
-    font-size: 12px;
-    color: #ffffff;
-    color: #cccccc;
-    text-align: center;
-    background: #666666;
-    border-top: 8px solid #4aaaa5;
-    height: 50px;
+ 
+  .footer {
+     
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: red;
+     color: white;
+     text-align: center;
+     width: 100%;
+     height: 60px;
+     font-family: Georgia, Times, "Times New Roman", serif;
+     font-size: 20px;
+     font-weight: 30%;
+     line-height: 20px;
+     color: #ffffff;
+     text-decoration: none;
+     background: #4aaaa5;
   }
-  
+      
   h3, h2 {
     padding-bottom: 20px;
     margin-bottom: 15px;
@@ -215,4 +214,21 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
+
+  /*
+  These rules take effect when the browser's width
+  is either 768px or less.
+*/
+@media screen and (max-width: 768px) {
+  /* The body's bg color will be #333 */
+  body {
+    background-color: #333;
+  }
+
+  /* The wrapper's width will be 600px */
+  .wrapper {
+    width: 600px;
+  }
+}
+
   
